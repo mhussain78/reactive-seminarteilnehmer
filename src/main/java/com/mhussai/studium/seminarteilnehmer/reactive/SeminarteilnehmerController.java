@@ -15,7 +15,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @RestController
-@RequestMapping(path = "serminateilnehmer")
+@RequestMapping(path = "serminarteilnehmer")
 @RequiredArgsConstructor
 public class SeminarteilnehmerController {
 
@@ -39,7 +39,7 @@ public class SeminarteilnehmerController {
     @RequestMapping(method = POST)
     public Mono<ResponseEntity<?>> create(@RequestBody Seminarteilnehmer seminarteilnehmer) {
         return seminarteilnehmerService.save(seminarteilnehmer)
-                .map(entity -> ResponseEntity.created(URI.create("/serminateilnehmer/" + entity.getId()))
+                .map(entity -> ResponseEntity.created(URI.create("/serminarteilnehmer/" + entity.getId()))
                         .build());
     }
 

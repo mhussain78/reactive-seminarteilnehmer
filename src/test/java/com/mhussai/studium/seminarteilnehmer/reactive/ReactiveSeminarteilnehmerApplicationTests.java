@@ -29,7 +29,7 @@ class ReactiveSeminarteilnehmerApplicationTests {
 
     @Test
     public void testGetSeminarteilnemer() {
-        this.client.get().uri("/serminateilnehmer")
+        this.client.get().uri("/serminarteilnehmer")
                 .accept(MediaType.APPLICATION_JSON)
                 .exchange().expectStatus().isOk()
                 .expectHeader().contentType(MediaType.APPLICATION_JSON)
