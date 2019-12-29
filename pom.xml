@@ -8,7 +8,7 @@
         <version>2.2.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.mhussai.studium</groupId>
+    <groupId>com.mhussain.studium</groupId>
     <artifactId>reactive-seminarteilnehmer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>reactive-seminarteilnehmer</name>
