@@ -11,6 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
 
+// (1)
 @Import(SeminarFunctionalEndpointConfiguration.class)
 @WebFluxTest
 class ReactiveSeminarteilnehmerApplicationTests {
@@ -21,6 +22,7 @@ class ReactiveSeminarteilnehmerApplicationTests {
     @MockBean
     private SeminarteilnehmerService seminarteilnehmerService;
 
+    // (2)
     @BeforeEach
     public void initialize() {
         var seminarteilnehmer = Flux.just(createSeminarteilnehmer(1L), createSeminarteilnehmer(2L));
